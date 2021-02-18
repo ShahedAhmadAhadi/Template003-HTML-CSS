@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+body{
+    background:white;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    user-select:none;
+    font-family: 'Lora', serif;
+}
+header{
+    display: flex;
+    border-bottom: 0.5px solid #666;
+    box-shadow: 0 1px 3px #666;
+    flex-flow: wrap row;
+    justify-content: space-between;
+}
+header div.logo img{
+    width: 180px;
+    height: 80px;
+    padding-bottom: 0;
+}
+li{
+    margin: 0;
+    padding: 0;
+}
+header div.catagory ul.parent{
+    margin: 15px 0px 0px -20px;
+    position: relative;
+    cursor: pointer;
+}
+header div.catagory ul.parent li{
+    list-style-type: none;
+    padding: 10px;
+    border: 1px solid #fff;
+}
+header div.catagory ul.parent li:hover{
+    background-color: #eee;
+    border: 1px solid #ddd;
+}
+header div.catagory ul.parent li ul.child1{
+    display:none;
+    position: absolute;
+    margin: 12px 0px 0px -50px;
+    
+}
+header div.catagory ul.parent li ul.child1 li{
+    list-style-type: none;
+    list-style-position: inside;
+    padding: 10px;
+    box-shadow: 0.1px 0.1px 0px 0.2px gray;
+    width: 150px;
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+header div.catagory ul.parent li ul.child1 li a{
+    text-decoration: none;
+    color: #000;
+}
+header div.catagory ul.parent li ul.child1 li:hover{
+    background-color: #eee;
+    border: 1px solid #ddd;
+}
+header div.catagory ul.parent li:hover ul.child1{
+    display: block;
+}
+#search{
+    width: 45%;
+}
+header div#search form input{
+    padding: 7px 75px 7px 10px;
+    margin: 20px 10px 15px 0;
+    font-size: 17px;
+    width: 90%;
+    border: 1px solid #999;
+    border-radius: 3px;
+    outline: none;
+}
+div#search form input:focus{
+    border: 1px solid #555
+}
+header div#search form button.searchIcon {
+    padding: 6px 20px 7px 20px;
+    margin-left: -73px;
+    border-style: none;
+    background-color: #888;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+header div#search form button.searchIcon:hover {
+    background-color: #999;
+}
+header div.sign .login{
+    margin: 20px;
+    width: 100px;
+    padding: 10px;
+    height: 40px;
+    background-color: #41d6c3;
+    border-style: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+header div.sign .signup{
+    width: 100px;
+    cursor: pointer;
+    padding: 10px;
+    height: 40px;
+    background-color: #5596e6;
+    border-style: none;
+    border-radius: 3px;
+    color: #fff;
+    margin: 20px;
+    margin-left: 0;
+    font-weight: bold;
+}
+header div.sign .login:hover{
+    border: 1px solid #20ab98;
+    font-size: 15px;
+}
+header div.sign .signup:hover{
+    border: 1px solid #4984cc;
+    font-size: 15px;
+}
