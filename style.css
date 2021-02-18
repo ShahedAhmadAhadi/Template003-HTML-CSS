@@ -17,7 +17,7 @@ header{
     justify-content: space-between;
 }
 header div.logo img{
-    width: 180px;
+    width: 200px;
     height: 80px;
     padding-bottom: 0;
 }
@@ -26,41 +26,43 @@ li{
     padding: 0;
 }
 header div.catagory ul.parent{
-    margin: 15px 0px 0px -20px;
+    margin: 17px 0px;
     position: relative;
     cursor: pointer;
+    color: #333;
 }
 header div.catagory ul.parent li{
     list-style-type: none;
     padding: 10px;
-    border: 1px solid #fff;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-bottom: 23px;
 }
 header div.catagory ul.parent li:hover{
-    background-color: #eee;
-    border: 1px solid #ddd;
+    color: #19AEC2;
 }
 header div.catagory ul.parent li ul.child1{
     display:none;
     position: absolute;
-    margin: 12px 0px 0px -50px;
-    
+    margin: 20px 0px 0px -12px;
+    border: 1px solid #bbb;
+    width: 200px;
+    background-color: #fff;
+    padding-bottom: 10px;
+    padding: 0;
+    border-radius: 5px;
 }
 header div.catagory ul.parent li ul.child1 li{
     list-style-type: none;
-    list-style-position: inside;
     padding: 10px;
-    box-shadow: 0.1px 0.1px 0px 0.2px gray;
-    width: 150px;
-    border: 1px solid #fff;
-    background-color: #fff;
+    margin-top: 10px;
 }
 header div.catagory ul.parent li ul.child1 li a{
     text-decoration: none;
     color: #000;
 }
-header div.catagory ul.parent li ul.child1 li:hover{
-    background-color: #eee;
-    border: 1px solid #ddd;
+header div.catagory ul.parent li ul.child1 li:hover a, ul.child1 li:hover i{
+    color: #19AEC2;
+    font-weight: 700;
 }
 header div.catagory ul.parent li:hover ul.child1{
     display: block;
@@ -124,4 +126,45 @@ header div.sign .login:hover{
 header div.sign .signup:hover{
     border: 1px solid #4984cc;
     font-size: 15px;
+}
+
+@media screen and (max-width:1025px){
+    #search{
+        width: 50%;
+    }
+}
+@media screen and (max-width:800px){
+    #search{
+        width: 45%;
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width:714px){
+    header div.catagory ul.parent li ul.child1{
+        left: -45px;
+    }
+}
+/* @media screen and (max-width:750px){
+    #search{
+        width: 100%;
+    }
+} */
+@media screen and (max-width:600px){
+    #search{
+        width: 95%;
+    }
+}
+@media screen and (max-width:400px){
+
+    #search{
+        width: 95%;
+        margin-left: 10px;
+    }
+    header div.logo img{
+        width: 100%;
+        height: auto;
+    }
+    header div.catagory ul.parent li ul.child1{
+        left: 20px;
+    }
 }
