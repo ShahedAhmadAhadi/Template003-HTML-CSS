@@ -162,7 +162,7 @@ header div.sign .signup:hover{
     padding: 3rem;
     box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);
     border-radius: 5px;
-    top: 25%;
+    top: 15%;
     left: 10%;
 }
 #in_overlay h1{
@@ -192,10 +192,22 @@ header div.sign .signup:hover{
     float: right;
     padding: 2rem;
 }
+#title-mob{
+    position: absolute;
+    display: none;
+    color: white;
+    left: 10%;
+}
 
 @media screen and (max-width:1025px){
     #search{
         width: 50%;
+    }
+    #in_overlay{
+        top: 10%;
+    }
+    #in_overlay h1{
+        font-size: 1.5em;
     }
 }
 @media screen and (max-width:800px){
@@ -203,10 +215,27 @@ header div.sign .signup:hover{
         width: 45%;
         margin-left: 50px;
     }
+    #in_overlay{
+        top: 5%;
+        left: 4%;
+        padding: 2rem;
+    }
+    #in_overlay h1{
+        font-size: 1.5em;
+    }
 }
 @media screen and (max-width:714px){
     header div.catagory ul.parent li ul.child1{
         left: -45px;
+    }
+    #in_overlay{
+        display: none;
+    }
+    #title-mob{
+        display: block;
+    }
+    #overlay{
+        display: block;
     }
 }
 /* @media screen and (max-width:750px){
