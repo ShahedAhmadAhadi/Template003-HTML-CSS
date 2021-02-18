@@ -30,6 +30,7 @@ header div.catagory ul.parent{
     position: relative;
     cursor: pointer;
     color: #333;
+    padding: 0;
 }
 header div.catagory ul.parent li{
     list-style-type: none;
@@ -50,6 +51,7 @@ header div.catagory ul.parent li ul.child1{
     padding-bottom: 10px;
     padding: 0;
     border-radius: 5px;
+    z-index: 10;
 }
 header div.catagory ul.parent li ul.child1 li{
     list-style-type: none;
@@ -63,6 +65,11 @@ header div.catagory ul.parent li ul.child1 li a{
 header div.catagory ul.parent li ul.child1 li:hover a, ul.child1 li:hover i{
     color: #19AEC2;
     font-weight: 700;
+}
+#last{
+    display: inline-block;
+    font-size: 0.7rem;
+    float: right;
 }
 header div.catagory ul.parent li:hover ul.child1{
     display: block;
@@ -127,21 +134,63 @@ header div.sign .signup:hover{
     border: 1px solid #4984cc;
     font-size: 15px;
 }
-
-div.frame {
-    display: flex;
+#index_header{
+    width: 100%;
+    position: relative;
 }
-article div.frame iframe#content{
-    width: 80%;
-    border-style: none;
-    min-height: 520px; 
-     max-height: auto;
+#index_header img{
+    width: 100%;
+    height: auto;
+    object-fit: scale-down;
 }
-article div.frame iframe#aside{
-    width: 19.65%;
-    border-style: none;
-    min-height:520px; 
-     max-height: auto;
+#overlay{
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #41d6c333;
+    height: 100%;
+}
+#index_header:hover #overlay{
+    display: block;
+}
+#in_overlay{
+    position: absolute;
+    color: #999;
+    width: 350px;
+    background-color: #fff;
+    padding: 3rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);
+    border-radius: 5px;
+    top: 25%;
+    left: 10%;
+}
+#in_overlay h1{
+    color: #444;
+    padding-bottom: 20px;
+}
+#in_overlay p{
+    text-align: justify;
+    padding-bottom: 20px;
+}
+#in_overlay button{
+    padding: 0.5rem 2rem;
+    font-size: 1.05rem;
+    background-color: #3d70b2;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #3d70b2;
+    border-radius: 3px;
+}
+#in_overlay button:hover{
+    border: 1px solid #32609b;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+#overlay img{
+    width: 48%;
+    float: right;
+    padding: 2rem;
 }
 
 @media screen and (max-width:1025px){

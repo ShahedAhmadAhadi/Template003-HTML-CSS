@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.8em;
+}
+/* This is for making the main div that covers all the body and divided in areas that shown below */
+.main{
+    display: grid;
+    overflow: hidden;
+    grid-template-areas: "item1 item2 item3 item4 item5 item6 item7 item8 item9 item10 item11 item12 "
+                         "item13 item14 itme15 item16 part part part part item17 item18 item19 item20"
+                         "item49 item50 item51 item52 part part part part item53 item54 item55 item56"
+                         "item21 item22 item23 item24 part part part part item25 item26 item27 item28 "
+                         "item29 item30 item31 item32 part part part part item33 item34 item35 item36"
+                         "item37 item38 item39 item40 item41 item42 item43 item44 item45 item46 item47 item48";
+}
+/* The box class is defined to all divs without the part div */
+.box{
+    height: 100px;
+    font-size: 4.2em;
+    text-align: center;
+    border: 2px solid #fff;
+    animation-name: anime;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+/* This is the animation for class of boxes that defined above */
+@keyframes anime{
+    0% {background-color: lightgreen; transform: rotate(30deg);}
+    25% {background-image: linear-gradient(to right , #ef5350, #fff);transform: rotate(90deg);}
+    50% {background-image: linear-gradient(to right, #184e83 , #fff);transform: rotate(180deg);}
+    75% {background-image: linear-gradient(to left , #ef5350 , #fff);transform: rotate(270deg);}
+    100% {background-image: linear-gradient(to left ,#184e83, #fff); transform: rotate(360deg);}
+}
+/* This is when some hover on the divs that is having the class box  */
+.box:hover{
+    background-color: lightgreen;
+    color: #fff;
+    border: 2px inset #fff;
+}
+/* This class is the name of the boxes that are in the middle of upper row and lower row*/
+.box2{
+    height: 103px;
+}
+/* All the properties defined below that are till item56 is given just the part to show temslf in which position */
+.item1{
+    grid-area: item1;
+}
+.item2{
+    grid-area: item2;
+}
+.item3{
+    grid-area: item3;
+}
+.item4{
+    grid-area: item4;
+}
+.item5{
+    grid-area: item5;
+}
+.item6{
+    grid-area: item6;
+}
+.item7{
+    grid-area: item7;
+}
+.item8{
+    grid-area: item8;
+}
+.item9{
+    grid-area: item9;
+}
+.item10{
+    grid-area: item10;
+}
+.item11{
+    grid-area: item11;
+}
+.item12{
+    grid-area: item12;
+}
+.item13{
+    grid-area: item13;
+}
+.item14{
+    grid-area: item14;
+}
+.item15{
+    grid-area: item15;
+}
+.item16{
+    grid-area: item16;
+}
+.item17{
+    grid-area: item17;
+}
+.item18{
+    grid-area: item18;
+}
+.item19{
+    grid-area: item19;
+}
+.item1{
+    grid-area: item20;
+}
+.item21{
+    grid-area: item21;
+}
+.item22{
+    grid-area: item22;
+}
+.item23{
+    grid-area: item23;
+}
+.item24{
+    grid-area: item24;
+}
+.item25{
+    grid-area: item25;
+}
+.item26{
+    grid-area: item26;
+}
+.item27{
+    grid-area: item27;
+}
+.item28{
+    grid-area: item28;
+}
+.item29{
+    grid-area: item29;
+}
+.item30{
+    grid-area: item30;
+}
+.item31{
+    grid-area: item31;
+}
+.item32{
+    grid-area: item32;
+}
+.item33{
+    grid-area: item33;
+}
+.item34{
+    grid-area: item34;
+}
+.item35{
+    grid-area: item35;
+}
+.item36{
+    grid-area: item36;
+}
+.item37{
+    grid-area: item37;
+}
+.item38{
+    grid-area: item38;
+}
+.item39{
+    grid-area: item39;
+}
+.item40{
+    grid-area: item40;
+}
+.item41{
+    grid-area: item41;
+}
+.item42{
+    grid-area: item42;
+}
+.item43{
+    grid-area: item43;
+}
+.item44{
+    grid-area: item44;
+}
+.item45{
+    grid-area: item45;
+}
+.item46{
+    grid-area: item46;
+}
+.item47{
+    grid-area: item47;
+}
+.item48{
+    grid-area: item48;
+}
+.item49{
+    grid-area: item49;
+}
+.item50{
+    grid-area: item50;
+}
+.item51{
+    grid-area: item51;
+}
+.item52{
+    grid-area: item52;
+}
+.item53{
+    grid-area: item53;
+}
+.item54{
+    grid-area: item54;
+}
+.item55{
+    grid-area: item55;
+}
+.item56{
+    grid-area: item56;
+}
+/* This is the div with class part this is also for locating the part position in grid area */
+.part{
+    grid-area: part;
+}
+/* The div it self is divided by grid to four culomns to show the the items accuratly between them */
+div.part{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    box-shadow: 1px 1px 2px 2px #eee;
+}
+/* This is the title of the div.part */
+div.part div.title{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #ef5350;
+    grid-row: 1/2;
+    grid-column: 1/5;
+}
+div.part form{
+    grid-column: 1/5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 2/3;
+}
+div.part form input{
+    border-style: none;
+    border-bottom: 2px solid #184e83;
+    padding: 10px;
+    outline: none;
+    width: 100%;
+    grid-column: 1/3;
+}
+div.part form input::placeholder{
+    color: #ef5350;
+    font-weight: bold;
+}
+div.part form input:focus{
+    border-bottom: 2px solid #ef5350;
+    color: #184e83;
+}
+div.part form input:hover{
+    border-bottom: 2px solid #ef5350;
+    color: #184e83;
+}
+div.part form input:hover::placeholder{
+    color: #184e83;
+}
+div.part form input:focus::placeholder{
+    color: #184e83;
+}
+div.part form input[type=button]{
+    width: 50%;
+    font-weight: bold;
+    color: #ef5350;
+    margin: auto;
+}
+div.part form input[type=button]:hover{
+    color: #184e83;
+    
+}
+div.part form select{
+    color: #ef5350;
+}
+div.part form select{
+    color: #ef5350;
+    font-weight: bold;
+    outline: none;
+    border-style: none;
+    border: none;
+    border-bottom: 2px solid #184e83;
+    width: 100%;
+    padding: 10px;
+    border-left: 10px solid #fff;
+}
+div.part form button{
+    width: 20%;
+    border-style: none;
+    border: none;
+    color: #ef5350;
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+    border-bottom: #184e83;
+    padding: 5px;
+}
+div.part form button:focus{
+    border-bottom: #ef5350;
+    color: #184e83;
+}
+div.part h1{
+    text-align: center;
+    color: #ef5350;
+    grid-column: 1/5;
+    grid-row: 3/4;
+}
+div.logo {
+    grid-column: 1/5;
+    grid-row: 4/5;
+}
+div.part div.logo i{
+    color: #184e83;
+    font-size: 2em;
+    padding: 5.9%;
+    
+}
+div.part div.logo i:hover{
+    color:#ef5350 ;
+}

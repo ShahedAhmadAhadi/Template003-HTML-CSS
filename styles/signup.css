@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.8em;
+}
+.main{
+    display: grid;
+    overflow: hidden;
+    grid-template-areas: "item1 item2 item3 item4 item5 item6 item7 item8 item9 item10 item11 item12 "
+                         "item13 item14 itme15 item16 part part part part item17 item18 item19 item20"
+                         "item49 item50 item51 item52 part part part part item53 item54 item55 item56"
+                         "item21 item22 item23 item24 part part part part item25 item26 item27 item28 "
+                         "item29 item30 item31 item32 part part part part item33 item34 item35 item36"
+                         "item37 item38 item39 item40 item41 item42 item43 item44 item45 item46 item47 item48";
+}
+.box{
+    height: 100px;
+    font-size: 4.2em;
+    text-align: center;
+    animation-name: anime;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    z-index: -1;
+}
+.box:hover{
+    background-color: lightgreen;
+    color: #fff;
+    border: 2px inset #fff;
+}
+
+.box2{
+    height: 103px;
+}
+.part{
+    grid-area: part;
+}
+div.part{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    box-shadow: 1px 1px 2px 2px #eee;
+}
+div.part div.title{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #ef5350;
+    grid-row: 1/2;
+    grid-column: 1/5;
+}
+div.part form{
+    z-index: 2;
+    grid-column: 1/5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 2/3;
+}
+div.part form input{
+    border-style: none;
+    border-bottom: 2px solid #184e83;
+    padding: 10px;
+    outline: none;
+    width: 100%;
+    grid-column: 1/3;
+}
+div.part form input::placeholder{
+    color: #ef5350;
+    font-weight: bold;
+}
+div.part form input:focus{
+    border-bottom: 2px solid #ef5350;
+    color: #184e83;
+}
+div.part form input:hover{
+    border-bottom: 2px solid #ef5350;
+    color: #184e83;
+}
+div.part form input:hover::placeholder{
+    color: #184e83;
+}
+div.part form input:focus::placeholder{
+    color: #184e83;
+}
+div.part form input[type=button]{
+    width: 50%;
+    font-weight: bold;
+    color: #ef5350;
+    margin: auto;
+}
+div.part form input[type=button]:hover{
+    color: #184e83;
+    
+}
+div.part form select{
+    color: #ef5350;
+}
+div.part form select{
+    color: #ef5350;
+    font-weight: bold;
+    outline: none;
+    border-style: none;
+    border: none;
+    border-bottom: 2px solid #184e83;
+    width: 100%;
+    padding: 10px;
+    border-left: 10px solid #fff;
+}
+div.part form button{
+    width: 20%;
+    border-style: none;
+    border: none;
+    color: #ef5350;
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+    border-bottom: #184e83;
+    padding: 5px;
+}
+div.part form button:focus{
+    border-bottom: #ef5350;
+    color: #184e83;
+}
+div.part h1{
+    text-align: center;
+    color: #ef5350;
+    grid-column: 1/5;
+    grid-row: 3/4;
+}
+div.logo {
+    grid-column: 1/5;
+    grid-row: 4/5;
+}
+div.part div.logo i{
+    color: #184e83;
+    font-size: 2em;
+    padding: 50px;
+    
+}
+div.part div.logo i:hover{
+    color:#ef5350 ;
+}
+/* @media screen and (max-width:1000px){
+    .main{
+        display: grid;
+        overflow: hidden;
+        grid-template-areas: "item1 item2 item3 item4 item5 item6 item7 item8  item10 item11 item12 "
+                             "item13 item14 itme15 part part part part part  item18 item19 item20"
+                             "item49 item50 item51 part part part part part  item54 item55 item56"
+                             "item21 item22 item23 part part part part part  item26 item27 item28 "
+                             "item29 item30 item31 part part part part part  item34 item35 item36"
+                             "item37 item38 item39 item40 item41 item42 item43  item45 item46 item47 item48";
+    }
+} */
+@media screen and (max-width:900px){
+    .main{
+        display: grid;
+        overflow: hidden;
+        grid-template-areas: "item1 item2 item3 item4 item5 item6 item7 item8  . . . "
+                             ". item14 part part part part part .  item18 . ."
+                             "item49 item50 part part part part part item51  item54 item55 item56"
+                             "item21 item22 part part part part part item23  item26 item27 item28 "
+                             "item29 item30 part part part part part item31  item34 item35 item36"
+                             "item37 item38 item39 item40 item41 item42 item43  item45 item46 item47 item48";
+    }
+}
+@media screen and (max-width:700px){
+    .main{
+        display: grid;
+        overflow: hidden;
+        grid-template-areas: "item1 item2 item3 item4 item5 item6 item7 item8  item10 item11 item12 "
+                             "item13 item14 part part part part part itme15  item18 item19 item20"
+                             "item49 item50 part part part part part item51  item54 item55 item56"
+                             "item21 item22 part part part part part item23  item26 item27 item28 "
+                             "item29 item30 part part part part part item31  item34 item35 item36"
+                             "item37 item38 item39 item40 item41 item42 item43  item45 item46 item47 item48";
+    }
+}
+@media screen and (max-width:500px){
+    .main{
+        display: grid;
+        overflow: hidden;
+        grid-template-areas: "item1 item2 item3 item4 item5 item6 item7 item8  item10 item11 item12 "
+                             "item13 part part part part part part itme15  item18 item19 item20"
+                             "item49 part part part part part part item51  item54 item55 item56"
+                             "item21 part part part part part part item23  item26 item27 item28 "
+                             "item29 part part part part part part item31  item34 item35 item36"
+                             "item37 item38 item39 item40 item41 item42 item43  item45 item46 item47 item48";
+    }
+}
+@media screen and (max-width:450px){
+    .main{
+        display: grid;
+        overflow: hidden;
+        grid-template-areas: "item1 item2 item3 item4 item5 item6 item7 item8  item10 item11 item12 "
+                             "part part part part part part . itme15  item18 item19 item20"
+                             "part part part part part part . item51  item54 item55 item56"
+                             "part part part part part part . item23  item26 item27 item28 "
+                             "part part part part part part . item31  item34 item35 item36"
+                             "item37 item38 item39 item40 item41 item42 item43  item45 item46 item47 item48";
+    }
+    div.part{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        box-shadow: 1px 1px 2px 2px #eee;
+    }
+}

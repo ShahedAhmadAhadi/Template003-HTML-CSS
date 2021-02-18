@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+/* The header part is flex cuase its just in one side mean row so this make it easy to responsive */
+div.header {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* This is a imported font to this page and by the name given to font-family you can access this font anywere
+    in this form */
+@font-face{
+    font-family: font;
+    src: url(../font/RobotoSlab-Regular.ttf);
+}
+/* This is the styles for the h1 tag in header */
+div.header h1{
+    color: #ef5350;
+    padding: 5px;
+}
+.a{
+    padding: 10px;
+}
+.b{
+    padding: 8px;
+    padding-left: 0;
+    font-family: font;
+}
+h1#sec{
+    color: #183e84;
+}
+/* This is the font set for the login button the width of the button is not changable */
+.header div.sign .login{
+    margin: 20px;
+    width: 80px;
+    padding: 10px;
+    height: 40px;
+    background-color: #ef5350;
+    border-style: none;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+/* This is the font set for the sign up button the width of the button is not changable */
+.header div.sign .signup{
+    width: 80px;
+    cursor: pointer;
+    padding: 10px;
+    height: 40px;
+    background-color: #183e84;
+    border-style: none;
+    border-radius: 2px;
+    color: #fff;
+    margin: 20px;
+    margin-left: 0;
+    font-weight: bold;
+}
+/* This is when the user hover on the login and the lower is when the user hover on signup button */
+.header div.sign .login:hover{
+    background-color: #183e84;
+}
+.header div.sign .signup:hover{
+    background-color: #ef5350;
+}
+/* This is the part where styles are defiened for the search bar */
+div.sea{
+    width: 50%;
+    padding: 15px;
+    flex-basis: 60%;
+    display: flex;
+}
+/* This is the styles for input used for search bar */
+input {
+    padding-left: 10px;
+    width: 90%;
+    font-size: 1.5rem;
+    border-style: none;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black ;
+}
+/* This is the logo of the search bar */
+i{
+    padding: 13px;
+    font-size: 1.45em;
+    background-color: #183e84;
+    color: #ef5350;
+    border-radius: 0 5px 5px 0;
+}
+/* This is when user hover on the logo part of the search bar */
+i:hover{
+    background-color: #ef5350;
+    color: #183e84;
+}
+/* This is the content form for style the content the size of it is 90% for the responsiveness and it also have
+    the shadow  to be seen away from the body */
+div.content{
+    width: 90%;
+    margin: auto;
+    box-shadow: 1px 1px 2px 2px gray;
+    display: flex;
+    flex-wrap: wrap;
+}
+div.content h1{
+    background-color: #18aa84;
+}
+/* This is the style for image */
+div.content img{
+    width: 50%;
+    padding: 3%;
+    border-radius: 40px;
+}
+div.des{
+    width: 50%;
+    padding: 5%;
+}
+div.des button{
+    border-style: none;
+    padding: 4%;
+    width: 25%;
+    box-shadow: 1px 1px 1px 1px gray;
+    font-size: 1.5;
+    background-color: #183e84;
+    color: #fff;
+}
+div.des button:hover{
+    background-color: #ef5350;
+}
+@media screen and (max-width:600px){
+    div.sea{
+        width: 90%;
+        flex-basis: 100%;
+    }
+}
+@media screen and (max-width:430px){
+    div.content{
+        flex-direction: column;
+    }
+    div.content img{
+        width: 90%;
+        padding: 3%;
+        border-radius: 40px;
+    }
+    div.des{
+        width: 100%;
+        padding: 50px;
+    }
+}
