@@ -128,6 +128,22 @@ header div.sign .signup:hover{
     font-size: 15px;
 }
 
+div.frame {
+    display: flex;
+}
+article div.frame iframe#content{
+    width: 80%;
+    border-style: none;
+    min-height: 520px; 
+     max-height: auto;
+}
+article div.frame iframe#aside{
+    width: 19.65%;
+    border-style: none;
+    min-height:520px; 
+     max-height: auto;
+}
+
 @media screen and (max-width:1025px){
     #search{
         width: 50%;
