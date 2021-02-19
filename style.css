@@ -198,6 +198,22 @@ header div.sign .signup:hover{
     color: white;
     left: 10%;
 }
+.toggle-btn{
+    margin-top: 10px;
+    padding: 3px;
+    background-color: red;
+}
+.toggle-btn-in{
+    cursor: pointer;
+    width: 20px;
+    height: 4px;
+    margin: 1px;
+    background-color: #000;
+    border-radius: 3px;
+}
+
+
+
 
 @media screen and (max-width:1025px){
     #search{
