@@ -212,7 +212,52 @@ header div.sign .signup:hover{
     border-radius: 3px;
 }
 
-
+div.comment{
+    margin: 2rem 0;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(12 1fr);
+    grid-gap: 20px;
+}
+div.comment div.para{
+    grid-column: 3/12;
+}
+div.comment form{
+    grid-column: 3/12;
+    padding: 20px;
+}
+div.comment input{
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+div.comment textarea{
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+    resize: none;
+}
+div.comment button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* width: 220px; */
+    padding:0.8rem 2rem;
+    border-style: none;
+    background-color: #20ab98;
+    color: white;
+    font-weight: 600;
+    outline: none;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+div.comment button span{
+    font-family: inherit;
+}
+div.comment button:hover{
+    background-color: #5596e6;
+}
 
 
 @media screen and (max-width:1025px){
@@ -263,6 +308,20 @@ header div.sign .signup:hover{
     #search{
         width: 95%;
     }
+    div.comment form{
+        grid-column: 1/13;
+        /* padding: 20px; */
+    }
+    div.comment div.para{
+        grid-column: 1/13;
+        padding: 14px;
+    }
+    div.comment input{
+        width: 100%;
+    }
+    div.comment textarea{
+        width: 100%;
+    }
 }
 @media screen and (max-width:400px){
 
@@ -276,5 +335,8 @@ header div.sign .signup:hover{
     }
     header div.catagory ul.parent li ul.child1{
         left: 20px;
+    }
+    div.comment button span{
+        display: none;
     }
 }
