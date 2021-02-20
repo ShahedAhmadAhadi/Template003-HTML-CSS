@@ -7,7 +7,7 @@ body{
     box-sizing: border-box;
     margin: 0;
     user-select:none;
-    font-family: 'Lora', serif;
+    font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
 }
 header{
     display: flex;
@@ -64,7 +64,7 @@ header div.catagory ul.parent li ul.child1 li a{
 }
 header div.catagory ul.parent li ul.child1 li:hover a, ul.child1 li:hover i{
     color: #19AEC2;
-    font-weight: 700;
+    font-weight: 500;
 }
 #last{
     display: inline-block;
@@ -144,15 +144,15 @@ header div.sign .signup:hover{
     object-fit: scale-down;
 }
 #overlay{
-    display: none;
+    display: block;
     position: absolute;
     top: 0;
     width: 100%;
-    background-color: #41d6c333;
+    background-color: #0004;
     height: 100%;
 }
 #index_header:hover #overlay{
-    display: block;
+    background-color: #41d6c322;
 }
 #in_overlay{
     position: absolute;
