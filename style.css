@@ -152,21 +152,23 @@ header div.sign .signup:hover{
     height: 100%;
 }
 #index_header:hover #overlay{
-    background-color: #41d6c322;
+    background-color: #d8dda822;
+    /* background-color: #41d6c322; */
 }
 #in_overlay{
     position: absolute;
-    color: #999;
+    color: rgba(221, 221, 221, 0.755);
     width: 350px;
-    background-color: #fff;
+    background-color: rgba(20, 20, 20, 0.5);
     padding: 3rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);
+    box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,0.8);
     border-radius: 5px;
     top: 15%;
     left: 10%;
+    z-index: 1;
 }
 #in_overlay h1{
-    color: #444;
+    color: rgba(255, 255, 255, 0.707);
     padding-bottom: 20px;
 }
 #in_overlay p{
@@ -176,7 +178,7 @@ header div.sign .signup:hover{
 #in_overlay button{
     padding: 0.5rem 2rem;
     font-size: 1.05rem;
-    background-color: #3d70b2;
+    background-color: #3d70b2ee;
     color: white;
     font-weight: bold;
     border: 1px solid #3d70b2;
@@ -189,8 +191,10 @@ header div.sign .signup:hover{
 }
 #overlay img{
     width: 48%;
-    float: right;
+    position: relative;
+    left: 23%;
     padding: 2rem;
+    z-index: 0;
 }
 #title-mob{
     position: absolute;
