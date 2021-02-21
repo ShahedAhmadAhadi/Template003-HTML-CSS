@@ -150,10 +150,56 @@ header div.sign .signup:hover{
     width: 100%;
     background-color: #0004;
     height: 100%;
+    transition: all 500ms ease-in;
+}
+#bafbdcdd-db4a-4743-9ceb-46364dc67d6{
+    display: none;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
 }
 #index_header:hover #overlay{
     background-color: #d8dda822;
     /* background-color: #41d6c322; */
+    transition: all 500ms ease-in;
+}
+#index_header:hover #bafbdcdd-db4a-4743-9ceb-46364dc67d6{
+    display: inline;
+    transition: all 500ms ease-in;
+}
+@keyframes cir{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+#circle{
+    animation: cir 500ms ease;
+}
+#index_header:hover #circle{
+    animation: cir 500ms ease;
+}
+
+@keyframes a {
+    0% {width: 0;}
+    50% {width: 0;}
+}
+#line-1{
+    animation: a 1s ease;
+}
+#index_header:hover #line-1{
+    animation: a 1s ease;
+}
+#line-2{
+    animation: a 1s ease;
+}
+#index_header:hover #line-2{
+    animation: a 1s ease;
+}
+#line-3{
+    animation: a 1s ease;
+}
+#index_header:hover #line-3{
+    animation: a 1s ease;
 }
 #in_overlay{
     position: absolute;
@@ -189,7 +235,11 @@ header div.sign .signup:hover{
     cursor: pointer;
     font-size: 1.2rem;
 }
-#overlay img{
+#bafbdcdd-db4a-4743-9ceb-46364dc67d6e{
+    width: 100%;
+    height: auto;
+}
+#overlay #img{
     width: 48%;
     position: relative;
     left: 23%;
