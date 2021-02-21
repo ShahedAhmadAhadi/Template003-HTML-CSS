@@ -109,9 +109,55 @@ div.part h2{
     text-align: initial;
     color: #fff;
     background-color: #1a538a;
+    box-shadow: 0 2px 2px 0 rgb(41 48 59 / 24%), 0 0 2px 0 rgb(41 48 59 / 12%);
     margin: 0.2rem 0;
     border-radius: 3px;
     font-weight: bold;
+}
+#fcb:hover{
+    background-color: #164a79;
+}
+#goo{
+    font-size: 1.4rem;
+    border-style: none;
+    padding: 0.8rem;
+    cursor: pointer;
+    grid-column: 1/3;
+    text-align: initial;
+    color: ;
+    background-color: #fff;
+    border: 0.5px solid #dedfe0;
+    box-shadow: 0 2px 2px 0 rgb(41 48 59 / 24%), 0 0 2px 0 rgb(41 48 59 / 12%);
+    margin: 0.2rem 0;
+    border-radius: 3px;
+    font-weight: bold;
+}
+#goo:hover{
+    background-color: #F2F3F5;
+}
+#goo-in{
+    color: #29303b;
+    font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+}
+#git{
+    font-size: 1.4rem;
+    border-style: none;
+    padding: 0.8rem;
+    cursor: pointer;
+    grid-column: 1/3;
+    text-align: initial;
+    color: #24292E;
+    background-color: #fff;
+    border: 0.5px solid #dedfe0;
+    box-shadow: 0 2px 2px 0 rgb(41 48 59 / 24%), 0 0 2px 0 rgb(41 48 59 / 12%);
+    margin: 0.2rem 0;
+    border-radius: 3px;
+    font-weight: bold;
+}
+#git:hover{
+    background-color: #F2F3F5;
 }
 #fcb-in{
     font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
