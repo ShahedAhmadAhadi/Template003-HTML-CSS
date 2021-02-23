@@ -338,6 +338,9 @@ div.foot{
     font-size: 1rem;
     margin: 1rem;
 }
+.foot div a:hover{
+    color: #19AEC2;
+}
 
 footer img{
     grid-column: 1/5;

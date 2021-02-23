@@ -39,6 +39,7 @@ div.part form input{
     font-size: 1.1rem;
     border-style: none;
     border-bottom: 1px solid #555;
+    border-radius: 0;
     padding: 10px;
     outline: none;
     width: 100%;
@@ -92,6 +93,9 @@ div.part h2{
     color: #4984cc;
     font-weight: bold;
 }
+#sign-a:hover{
+    color: #4395fa;
+}
 #forgot{
     margin: 0 auto;
     grid-column: 1/5;
@@ -99,6 +103,9 @@ div.part h2{
 #forg{
     color: #4984cc;
     text-decoration: none;
+}
+#forg:hover{
+    color: #4395fa;
 }
 #fcb{
     font-size: 1.4rem;
