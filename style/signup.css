@@ -114,3 +114,28 @@ div.part h2{
 #sign-a:hover{
     color: #4395fa;
 }
+@media screen and (max-width:1100px){
+    .main{
+        width: 40%;
+    }
+}
+@media screen and (max-width:850px){
+    .main{
+        width: 55%;
+    }
+}
+@media screen and (max-width:600px){
+    .main{
+        width: 70%;
+    }
+}
+@media screen and (max-width:500px){
+    .main{
+        width: 80%;
+    }
+}
+@media screen and (max-width:400px){
+    .main{
+        width: 95%;
+    }
+}
