@@ -71,3 +71,25 @@ div.part form input[type=button]{
     border-radius: 5px;
     font-size: 1.1rem;
 }
+div.part form input[type=button]:hover{
+    cursor: pointer;
+    background-color: #3a71b3;
+    
+}
+.agree{
+    text-align: center;
+    font-size: 0.65rem;
+    padding: 1rem;
+    color: #000;
+    grid-column: 1/5;
+    border-bottom: 0.1px solid #aaa;
+    margin: auto;
+}
+.link{
+    color: #19AEC2;
+    cursor: pointer;
+    font-weight: 500;
+}
+.link:hover{
+    color: #0f7c90;
+}
