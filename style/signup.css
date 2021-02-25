@@ -115,7 +115,6 @@ div.part h2{
     color: #4395fa;
 }
 footer{
-    grid-column: ;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     background-color: #20ab9810;

@@ -186,7 +186,6 @@ div.part div.logo i:hover{
     color:#ef5350 ;
 } */
 footer{
-    grid-column: ;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     background-color: #20ab9810;
