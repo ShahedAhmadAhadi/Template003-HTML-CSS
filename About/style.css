@@ -8,3 +8,59 @@ nav{
     flex-wrap: wrap;
     justify-content: space-between;
 }
+div.img{
+    width: 14%;
+}
+div.img img{
+    width: 100%;
+}
+div.sign .login{
+    margin: 10px;
+    width: 100px;
+    padding: 10px;
+    height: 40px;
+    background-color: #41d6c3;
+    border-style: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+div.sign .signup{
+    width: 100px;
+    cursor: pointer;
+    padding: 10px;
+    height: 40px;
+    background-color: #5596e6;
+    border-style: none;
+    border-radius: 3px;
+    color: #fff;
+    margin: 10px;
+    margin-left: 0;
+    font-weight: bold;
+}
+div.sign .back{
+    width: 140px;
+    cursor: pointer;
+    padding: 10px;
+    height: 40px;
+    background-color: #32609b;
+    border-style: none;
+    border-radius: 3px;
+    color: #fff;
+    margin: 10px;
+    margin-left: 0;
+    font-weight: bold;  
+}
+div.sign .login:hover{
+    border: 1px solid #20ab98;
+    font-size: 15px;
+}
+div.sign .signup:hover{
+    border: 1px solid #4984cc;
+    font-size: 15px;
+}
+div.sign .back:hover{
+    border: 1px solid #3d70b2ee;
+    font-size: 15px;
+}
