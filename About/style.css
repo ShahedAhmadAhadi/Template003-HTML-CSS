@@ -64,3 +64,32 @@ div.sign .back:hover{
     border: 1px solid #3d70b2ee;
     font-size: 15px;
 }
+header{
+    background-image: url(../images/7272.jpg);
+    background-position: center;
+    object-fit: contain;
+    position: relative;
+    height: 80vh;
+    margin: 2rem 0;
+}
+div.overlay-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000a;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+
+}
+header h1{
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+}
+header p{
+    width: 90%;
+    margin: auto;
+    font-size: 1.1rem;
+    color: white;
+}
