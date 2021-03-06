@@ -65,18 +65,27 @@ div.sign .back:hover{
     font-size: 15px;
 }
 header{
-    background-image: url(../images/7272.jpg);
+    background-image: url(../images/pexels-photo-52599.jpeg);
     background-position: center;
     object-fit: contain;
     position: relative;
     height: 80vh;
     margin: 2rem 0;
+    transition: all 1s ease-in-out;
+}
+@keyframes head{
+    0% {}
+}
+header:hover{
+    background-image: url(../images/7272.jpg);
+    object-fit: fill;
+    background-position: center;
 }
 div.overlay-header {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #000a;
+    background-color: #0006;
     z-index: 10;
     width: 100%;
     height: 100%;
@@ -84,12 +93,14 @@ div.overlay-header {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
+div.overlay-header:hover{
+    background-color: transparent;
+}
 header h1{
     text-align: center;
     font-size: 2.5rem;
     color: white;
     grid-column: 1/9;
-    background-color: red;
 }
 header p{
     width: 90%;
@@ -97,11 +108,9 @@ header p{
     font-size: 1.1rem;
     color: white;
     grid-column: 1/9;
-    background-color: #20ab98;
 }
 .box{
     grid-column: 9/12;
-    background-color: blue;
     display: flex;
     flex-direction: column;
 }
@@ -110,5 +119,4 @@ header p{
     font-size: 2rem;
     color: white;
     grid-column: 1/9;
-    background-color: green;
 }
