@@ -110,3 +110,13 @@ header h1{
 .box h1{
     font-size: 2rem;
 }
+.employees{
+    display: flex;
+    background-image: url(../images/thought-catalog-o0Qqw21-0NI-unsplash.jpg);
+}
+.employees-images-section{
+    display: grid;
+}
+.employees-info-section{
+
+}
