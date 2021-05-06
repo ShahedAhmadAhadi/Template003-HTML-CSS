@@ -165,4 +165,33 @@ header h1{
     border-top: 5px solid #999;
     border-right: 5px solid #999;
     padding: 2rem;
+    position: relative;
+}
+.style-div-1{
+    background-color: #20ab98;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: -1;
+}
+.style-div-2{
+    background-color: #5596e6;
+    border-radius: 50%;
+    width: 100px;
+    position: absolute;
+    height: 100px;
+    top: 10px;
+    right: 50px;
+    z-index: -1;
+}
+.style-div-3{
+    background-color: #ee4580;
+    border-radius: 50%;
+    width: 100px;
+    position: absolute;
+    height: 100px;
+    z-index: -1;
+    bottom: 100px;
+    right: 300px;
 }
