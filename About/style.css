@@ -118,8 +118,10 @@ header h1{
     display: flex;
     background-image: url(../images/thought-catalog-o0Qqw21-0NI-unsplash.jpg);
     justify-content: center;
+    background-position: center;
+    background-size: 100% 100%;
     align-items: center;
-    object-fit: contain;
+    object-fit: fill;
     flex-wrap: wrap;
 }
 .employee-images{
@@ -134,31 +136,33 @@ header h1{
 .triangle-shape-1{
     position: absolute;
     border-top: 50px solid transparent;
-    border-right: 50px solid black;
-    bottom: 0;
+    border-right: 50px solid gray;
+    bottom: 4px;
     right: 0;
 }
 .triangle-shape-2{
     position: absolute;
     border-top: 50px solid transparent;
-    border-right: 50px solid black;
-    bottom: 0;
-    right: 0;
+    border-left: 50px solid gray;
+    bottom: 4px;
+    left: 0;
 }
 .triangle-shape-3{
     position: absolute;
     border-top: 50px solid transparent;
-    border-right: 50px solid black;
-    bottom: 0;
+    border-right: 50px solid gray;
+    bottom: 5px;
     right: 0;
 }
 .triangle-shape-4{
     position: absolute;
     border-top: 50px solid transparent;
-    border-right: 50px solid black;
-    bottom: 0;
-    right: 0;
+    border-left: 50px solid gray;
+    bottom: 4px;
+    left: 0;
 }
 .employees-info-section{
-
+    border-top: 5px solid #999;
+    border-right: 5px solid #999;
+    padding: 2rem;
 }
