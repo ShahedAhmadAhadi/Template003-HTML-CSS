@@ -112,25 +112,53 @@ header h1{
 }
 .employees{
     display: grid;
-    background-image: url(../images/thought-catalog-o0Qqw21-0NI-unsplash.jpg);
     grid-template-columns: 1fr 1fr;
-    object-fit: cover;
 }
 .employees-images-section{
     display: flex;
+    background-image: url(../images/thought-catalog-o0Qqw21-0NI-unsplash.jpg);
     justify-content: center;
     align-items: center;
+    object-fit: contain;
     flex-wrap: wrap;
 }
 .employee-images{
     width: 30%;
     margin: 1rem;
-    
+    position: relative;
+
 }
 .employees-images-section img{
     width: 100%;
 }
-
+.triangle-shape-1{
+    position: absolute;
+    border-top: 50px solid transparent;
+    border-right: 50px solid black;
+    bottom: 0;
+    right: 0;
+}
+.triangle-shape-2{
+    position: absolute;
+    border-top: 50px solid transparent;
+    border-right: 50px solid black;
+    bottom: 0;
+    right: 0;
+}
+.triangle-shape-3{
+    position: absolute;
+    border-top: 50px solid transparent;
+    border-right: 50px solid black;
+    bottom: 0;
+    right: 0;
+}
+.triangle-shape-4{
+    position: absolute;
+    border-top: 50px solid transparent;
+    border-right: 50px solid black;
+    bottom: 0;
+    right: 0;
+}
 .employees-info-section{
 
 }
