@@ -111,12 +111,26 @@ header h1{
     font-size: 2rem;
 }
 .employees{
-    display: flex;
+    display: grid;
     background-image: url(../images/thought-catalog-o0Qqw21-0NI-unsplash.jpg);
+    grid-template-columns: 1fr 1fr;
+    object-fit: cover;
 }
 .employees-images-section{
-    display: grid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
+.employee-images{
+    width: 30%;
+    margin: 1rem;
+    
+}
+.employees-images-section img{
+    width: 100%;
+}
+
 .employees-info-section{
 
 }
